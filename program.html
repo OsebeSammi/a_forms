@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>  
-<title></title> 
+<head>
+<title></title>
 <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
@@ -50,14 +50,14 @@
   <label class="col-md-4 control-label" for="program_name">Name</label>
   <div class="col-md-6">
   <input id="program_name" name="name" type="text" placeholder="provider" class="form-control input-md" required="">
-    
+
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="ta_provider">Description</label>
-  <div class="col-md-4">                     
+  <div class="col-md-4">
     <textarea class="form-control" id="ta_provider" name="ta_provider">Description</textarea>
   </div>
 </div>
@@ -65,10 +65,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="code">Code</label>  
+  <label class="col-md-4 control-label" for="code">Code</label>
   <div class="col-md-6">
   <input id="code" name="code" type="text" placeholder="12345" class="form-control input-md" required="">
-    
+
   </div>
 </div>
 
@@ -119,10 +119,10 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="name">Name</label>  
+  <label class="col-md-4 control-label" for="name">Name</label>
   <div class="col-md-6">
   <input id="name" name="name" type="text" placeholder="package" class="form-control input-md" required="">
-    
+
   </div>
 </div>
 
@@ -170,17 +170,17 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="tsurvey">Name</label>  
+  <label class="col-md-4 control-label" for="tsurvey">Name</label>
   <div class="col-md-6">
   <input id="tsurvey" name="tsurvey" type="text" placeholder="survey name" class="form-control input-md" required="">
-    
+
   </div>
 </div>
 
 <!-- Textarea -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="ta_survey">Description</label>
-  <div class="col-md-4">                     
+  <div class="col-md-4">
     <textarea class="form-control" id="ta_survey" name="ta_survey">Description</textarea>
   </div>
 </div>
@@ -189,7 +189,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-primary">submit</button>
+    <button id="submit_survey" name="submit" class="btn btn-primary">submit</button>
   </div>
 </div>
 
@@ -201,22 +201,31 @@
     <fieldset>
 
         <!-- Text input-->
-        <div class="control-group">
-            <label class="control-label" for="module_name">Name</label>
-            <div class="controls">
-                <input id="module_name" name="module_name" placeholder="module_name" class="input-xlarge" type="text">
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="module_name">Name</label>
+            <div class="col-md-6">
+                <input id="module_name" name="name" type="text" placeholder="module_name" class="form-control input-md" required="">
 
             </div>
         </div>
+
+
 
         <!-- Textarea -->
-        <div class="control-group">
-            <label class="control-label" for="description_module">Description</label>
-            <div class="controls">
-                <textarea id="description_module" name="description">module descriptiuon</textarea>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="description_module">Description</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="description_module" name="description">Module Description</textarea>
             </div>
         </div>
-        <button id="submit_module" name="submit" class="btn btn-primary">submit</button>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit_module" name="submit" class="btn btn-primary">submit</button>
+            </div>
+        </div>
     </fieldset>
 </form>
 
@@ -224,25 +233,39 @@
 
 
 
-<legend>TRAINING</legend>
+<legend>Training</legend>
 <form class="form-horizontal">
     <fieldset>
-        <div class="control-group">
-            <label class="control-label" for="training_name">Name</label>
-            <div class="controls">
-                <input id="training_name" name="training_name" placeholder="training_name" class="input-xlarge" type="text">
+
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="name">Name</label>
+            <div class="col-md-6">
+                <input id="training_name" name="training_name" type="text" placeholder="training name" class="form-control input-md" required="">
 
             </div>
         </div>
+
 
         <!-- Textarea -->
-        <div class="control-group">
-            <label class="control-label" for="description_training">Description</label>
-            <div class="controls">
-                <textarea id="description_training" name="description">module descriptiuon</textarea>
+
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="ta_survey">Description</label>
+            <div class="col-md-4">
+                <textarea id="description_training" class="form-control" name="description">Training descriptiuon</textarea>
             </div>
         </div>
-        <button id="submit_training" name="submit" class="btn btn-primary">submit</button>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit_training" name="submit" class="btn btn-primary">submit</button>
+            </div>
+        </div>
+
+
     </fieldset>
 </form>
 
@@ -252,18 +275,24 @@
 <form class="form-horizontal">
     <fieldset>
 
-        <div class="control-group">
-            <label class="control-label" for="question">Question</label>
-            <div class="controls">
-                <textarea id="question" name="question">the question</textarea>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="question">Question</label>
+            <div class="col-md-4">
+                <textarea class="form-control" id="question" name="question">the question</textarea>
             </div>
         </div>
 
+
+
+
+
+
         <!-- Select Basic -->
-        <div class="control-group">
-            <label class="control-label" for="question_type">Type</label>
-            <div class="controls">
-                <select id="question_type" name="question_type" class="input-xlarge">
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="question_type">Type</label>
+            <div class="col-md-6">
+
+                <select id="question_type" name="question_type" class="form-control input-md">
                     <option>Radio</option>
                     <option>Free text</option>
                     <option>Check box</option>
@@ -271,20 +300,23 @@
             </div>
         </div>
 
-        <div class="control-group">
-            <label class="control-label" for="answer">Answer 1</label>
-            <div class="controls">
-                <div class="input-append">
-                    <input id="answer" name="answer" class="span2" placeholder="answer 1" required="" type="text">
-           <span class="add-on">
-             <input type="checkbox">
-           </span>
-                </div>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="answer">Answer 1</label>
+            <div class="col-md-6">
+                <input id="answer" name="answer" type="text" placeholder="answer 1" class="form-control input-md" required="">
 
             </div>
         </div>
 
-        <button id="submit_question_object" name="submit" class="btn btn-primary">submit</button>
+
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit_question_object" name="submit" class="btn btn-primary">submit</button>
+            </div>
+        </div>
+
     </fieldset>
 </form>
 
@@ -293,23 +325,28 @@
 <legend>Video / Audio Object</legend>
 <form class="form-horizontal">
     <fieldset>
-
-        <div class="control-group">
-            <label class="control-label" for="description_a_v">Description</label>
-            <div class="controls">
-                <textarea id="description_a_v" name="description_a_v">description of the audio / video file</textarea>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="description_a_v">Description</label>
+            <div class="col-md-6">
+                <textarea id="description_a_v" name="description_a_v" class="form-control input-md">description of the audio / video file</textarea>
             </div>
         </div>
+
 
         <!-- File Button -->
-        <div class="control-group">
-            <label class="control-label" for="browse_a_v">Choose file</label>
-            <div class="controls">
-                <input id="browse_a_v" name="browse_a_v" class="input-file" type="file">
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="browse_a_v">Choose file</label>
+            <div class="col-md-6">
+                <input id="browse_a_v" name="browse_a_v" type="file" required="">
             </div>
         </div>
 
-        <button id="submit_audio_video" name="submit" class="btn btn-primary">submit</button>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="submit"></label>
+            <div class="col-md-4">
+                <button id="submit_audio_video" name="submit" class="btn btn-primary">submit</button>
+            </div>
+        </div>
     </fieldset>
 </form>
 </body>
